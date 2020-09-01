@@ -9,12 +9,11 @@ def join_nested_strings(src)
   count2 = 0
     while count2 < src[count1].length do
       if src[count1][count2].is_a? String
-        str += src[count1][count2]
+        str += ' ' += src[count1][count2]
       end
       count2 += 1
     end
     count1 += 1
   end
-  binding.pry
   str
 end
