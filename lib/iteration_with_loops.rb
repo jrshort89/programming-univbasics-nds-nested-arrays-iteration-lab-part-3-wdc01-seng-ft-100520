@@ -6,7 +6,7 @@ def join_nested_strings(src)
   while count1 < src.length do
   count2 = 0
     while count2 < src[count1].length do
-      if src[count1][count2] == String
+      if src[count1][count2].length
         str + src[count1][count2]
       end
       count2 += 1
