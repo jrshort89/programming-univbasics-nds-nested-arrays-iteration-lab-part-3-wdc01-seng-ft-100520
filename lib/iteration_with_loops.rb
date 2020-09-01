@@ -9,7 +9,9 @@ def join_nested_strings(src)
       if src[count1][count2].is_a? String
         str + src[count1][count2]
       end
+      count2 += 1
     end
+    count1 += 1
   end
   str
 end
